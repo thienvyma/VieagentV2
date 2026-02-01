@@ -1,0 +1,58 @@
+
+> vieagent-app@0.1.0 build
+> next build
+
+Gû¦ Next.js 16.1.6 (Turbopack)
+- Environments: .env.local
+
+node.exe : GÜá The "middleware" file 
+convention is deprecated. Please use "proxy" 
+instead. Learn more: https://nextjs.org/docs/
+messages/middleware-to-proxy
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" 
+"C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified:  
+   (GÜá The "middle...leware-to-proxy:Strin  
+  g) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandE 
+   rror
+ 
+  Creating an optimized production build ...
+G£ô Compiled successfully in 10.2s
+  Running TypeScript ...
+  Collecting page data using 11 workers ...
+  Generating static pages using 11 workers (0/4) ...
+  Generating static pages using 11 workers (1/4) 
+  Generating static pages using 11 workers (2/4) 
+  Generating static pages using 11 workers (3/4) 
+G£ô Generating static pages using 11 workers (4/4) in 364.8ms
+  Finalizing page optimization ...
+
+Route (app)
+Göî Gùï /_not-found
+Gö£ ¦Æ /[locale]
+Gö£ ¦Æ /[locale]/dashboard
+Gö£ ¦Æ /[locale]/dashboard/admin
+Gö£ ¦Æ /[locale]/dashboard/admin/agents
+Gö£ ¦Æ /[locale]/dashboard/admin/agents/[id]
+Gö£ ¦Æ /[locale]/dashboard/admin/agents/new
+Gö£ ¦Æ /[locale]/dashboard/admin/users
+Gö£ ¦Æ /[locale]/dashboard/billing
+Gö£ ¦Æ /[locale]/dashboard/credentials
+Gö£ ¦Æ /[locale]/dashboard/run/[id]
+Gö£ ¦Æ /[locale]/dashboard/test-form
+Gö£ ¦Æ /[locale]/login
+Gö£ ¦Æ /[locale]/marketplace
+Gö£ ¦Æ /[locale]/signup
+Gö£ ¦Æ /agent/[id]
+Göö ¦Æ /auth/callback
+
+
+¦Æ Proxy (Middleware)
+
+Gùï  (Static)   prerendered as static content
+¦Æ  (Dynamic)  server-rendered on demand
+

@@ -1,0 +1,106 @@
+{
+    "Landing": {
+        "heroBadge": "VieAgent V2 đã sẵn sàng",
+        "heroTitleLine1": "Thuê Nhân sự AI,",
+        "heroTitleLine2": "Đừng tự xây dựng.",
+        "heroSubtitle": "Truy cập chợ ứng dụng của các Agent AI bảo mật, dựng sẵn. Từ chuyên gia SEO đến Nhà phân tích dữ liệu, thuê đội ngũ kỹ thuật số của bạn trong vài giây.",
+        "browseAgents": "Khám phá Agent",
+        "login": "Đăng nhập",
+        "featuresTitle": "Tại sao chọn VieAgent?",
+        "featuresSubtitle": "Chúng tôi xóa bỏ khoảng cách giữa tiềm năng AI và thực tế kinh doanh.",
+        "ctaTitle": "Sẵn sàng tự động hóa công việc?",
+        "ctaSubtitle": "Gia nhập hàng ngàn doanh nghiệp đang sử dụng VieAgent để mở rộng quy mô.",
+        "ctaButton": "Bắt đầu miễn phí",
+        "trustedBy": "Được tin dùng bởi các Lãnh đạo",
+        "testimonials": {
+            "t1": {
+                "name": "Sarah Chen",
+                "role": "Giám đốc Marketing",
+                "content": "VieAgent hoàn toàn thay đổi cách chúng tôi làm SEO. Agent định dạng đã tiết kiệm 20 giờ mỗi tuần.",
+                "rating": "5"
+            },
+            "t2": {
+                "name": "Minh Hoàng",
+                "role": "Data Scientist",
+                "content": "Khả năng chạy các luồng trích xuất dữ liệu phức tạp một cách bảo mật mà không cần quản lý hạ tầng là một bước ngoặt.",
+                "rating": "5"
+            },
+            "t3": {
+                "name": "Jessica Vũ",
+                "role": "Nhà sáng lập",
+                "content": "Tôi đã thuê toàn bộ đội ngũ hỗ trợ tại đây. Các agent phản hồi không khác gì người thật.",
+                "rating": "4"
+            }
+        },
+        "features": {
+            "prebuilt": {
+                "title": "Agent Dựng Sẵn",
+                "desc": "Bỏ qua việc nhắc lệnh. Sử dụng các agent đã được tối ưu hóa cho công việc thực tế."
+            },
+            "vault": {
+                "title": "Kho Lưu Trữ Bảo Mật",
+                "desc": "Khóa API của bạn (OpenAI, Gemini) được mã hóa AES-256. Chúng tôi không bao giờ thấy chúng."
+            },
+            "instant": {
+                "title": "Thực Thi Ngay Lập Tức",
+                "desc": "Chạy agent trực tiếp từ dashboard với giao diện biểu mẫu đơn giản."
+            },
+            "enterprise": {
+                "title": "Tiêu Chuẩn Doanh Nghiệp",
+                "desc": "Quản lý quyền truy cập, theo dõi sử dụng và quản lý đội ngũ được tích hợp sẵn."
+            }
+        }
+    },
+    "Navigation": {
+        "marketplace": "Chợ Agent",
+        "dashboard": "Bảng điều khiển",
+        "getStarted": "Bắt đầu",
+        "login": "Đăng nhập"
+    },
+    "Marketplace": {
+        "title": "Cửa hàng",
+        "subtitle": "Khám phá các Agent AI để tự động hóa quy trình của bạn.",
+        "noAgents": "Không tìm thấy agent nào.",
+        "checkBack": "Hãy quay lại sau để cập nhật các công cụ mới."
+    },
+    "Common": {
+        "loading": "Đang tải...",
+        "error": "Có lỗi xảy ra",
+        "save": "Lưu thay đổi",
+        "cancel": "Hủy",
+        "edit": "Chỉnh sửa",
+        "delete": "Xóa",
+        "logout": "Đăng xuất",
+        "settings": "Cài đặt",
+        "vault": "Kho lưu trữ",
+        "myAccount": "Tài khoản của tôi",
+        "support": "Hỗ trợ",
+        "success": "Thành công"
+    },
+    "Dashboard": {
+        "myAgents": "Agent của tôi",
+        "billing": "Thanh toán & Sử dụng",
+        "billingSubtitle": "Quản lý gói đăng ký và lịch sử mua hàng.",
+        "activeSubs": "Gói đăng ký đang hoạt động",
+        "orderHistory": "Lịch sử đơn hàng",
+        "noSubs": "Chưa có gói đăng ký nào.",
+        "noOrders": "Chưa có lịch sử giao dịch."
+    },
+    "Auth": {
+        "loginTitle": "Đăng nhập",
+        "loginDesc": "Nhập email của bạn bên dưới để đăng nhập",
+        "signupTitle": "Tạo tài khoản",
+        "signupDesc": "Nhập thông tin của bạn để tạo tài khoản mới",
+        "emailLabel": "Email",
+        "passwordLabel": "Mật khẩu",
+        "forgotPassword": "Quên mật khẩu?",
+        "noAccount": "Chưa có tài khoản?",
+        "haveAccount": "Đã có tài khoản?",
+        "loginButton": "Đăng nhập",
+        "signupButton": "Đăng ký",
+        "loggingIn": "Đang đăng nhập...",
+        "signingUp": "Đang đăng ký...",
+        "successLogin": "Đăng nhập thành công!",
+        "successSignup": "Đã tạo tài khoản! Vui lòng kiểm tra email để xác nhận."
+    }
+}

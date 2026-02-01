@@ -1,0 +1,200 @@
+
+> vieagent-app@0.1.0 build
+> next build
+
+Gû¦ Next.js 16.1.6 (Turbopack)
+- Environments: .env.local
+
+node.exe : GÜá The "middleware" file 
+convention is deprecated. Please use 
+"proxy" instead. Learn more: https://n
+extjs.org/docs/messages/middleware-to-
+proxy
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" "C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : 
+NotSpecified:     (GÜá The 
+"middle...leware-to-proxy:Strin    g) 
+[], RemoteException
+    + FullyQualifiedErrorId : 
+NativeCommandE    rror
+ 
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 2 
+errors:
+./components/business/vault/add-creden
+tial-form.tsx:4:1
+Module not found: Can't resolve 
+'@/app/dashboard/credentials/actions'
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m { 
+useState } [36mfrom[39m 
+[32m"react"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m 
+[36mimport[39m { addCredential } 
+[36mfrom[39m [32m"@/app/dashboard/c
+redentials/actions"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m
+ [90m 5 |[39m [36mimport[39m { 
+[33mButton[39m } [36mfrom[39m [32
+m"@/components/core/ui/button"[39m[3
+3m;[39m
+ [90m 6 |[39m [36mimport[39m { 
+[33mInput[39m } [36mfrom[39m [32m
+"@/components/core/ui/input"[39m[33m
+;[39m
+ [90m 7 |[39m [36mimport[39m { 
+[33mLabel[39m } [36mfrom[39m [32m
+"@/components/core/ui/label"[39m[33m
+;[39m[0m
+
+Import map: aliased to relative 
+'./app/dashboard/credentials/actions' 
+inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./components/business/vault/add-cr
+edential-form.tsx
+    ./app/[locale]/dashboard/credentia
+ls/page.tsx
+
+https://nextjs.org/docs/messages/modul
+e-not-found
+
+
+./components/business/vault/delete-cre
+dential-button.tsx:4:1
+Module not found: Can't resolve 
+'@/app/dashboard/credentials/actions'
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m { 
+useState } [36mfrom[39m 
+[32m"react"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m 
+[36mimport[39m { deleteCredential } 
+[36mfrom[39m [32m"@/app/dashboard/c
+redentials/actions"[39m[33m;[39m 
+[90m// We might want actions to be 
+in business logic too, but for now 
+app actions are fine or move to 
+lib?[39m
+ [90m   |[39m [31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [90m// Keeping 
+actions in app for now as they are 
+bound to the page, but importing from 
+business component is okay.[39m
+ [90m 6 |[39m [36mimport[39m { 
+[33mButton[39m } [36mfrom[39m [32
+m"@/components/core/ui/button"[39m[3
+3m;[39m
+ [90m 7 |[39m [36mimport[39m { 
+[33mLoader2[39m[33m,[39m 
+[33mTrash2[39m } [36mfrom[39m [32
+m"lucide-react"[39m[33m;[39m[0m
+
+Import map: aliased to relative 
+'./app/dashboard/credentials/actions' 
+inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./components/business/vault/delete
+-credential-button.tsx
+    ./app/[locale]/dashboard/credentia
+ls/page.tsx
+
+https://nextjs.org/docs/messages/modul
+e-not-found
+
+
+    at <unknown> (./components/busines
+s/vault/add-credential-form.tsx:4:1)
+    at <unknown> (https://nextjs.org/d
+ocs/messages/module-not-found)
+    at <unknown> (./components/busines
+s/vault/delete-credential-button.tsx:4
+:1)
+    at <unknown> (https://nextjs.org/d
+ocs/messages/module-not-found)

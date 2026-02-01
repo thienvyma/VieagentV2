@@ -1,0 +1,106 @@
+{
+    "Landing": {
+        "heroBadge": "VieAgent V2 is Live",
+        "heroTitleLine1": "Hire AI Employees,",
+        "heroTitleLine2": "Don't Build Them.",
+        "heroSubtitle": "Access a marketplace of pre-built, secure AI agents. From SEO experts to Data Analysts, hire your digital workforce in seconds.",
+        "browseAgents": "Browse Agents",
+        "login": "Log In",
+        "featuresTitle": "Why VieAgent?",
+        "featuresSubtitle": "We bridge the gap between AI potential and business reality.",
+        "ctaTitle": "Ready to automate your work?",
+        "ctaSubtitle": "Join thousands of businesses using VieAgent to scale their operations with AI.",
+        "ctaButton": "Get Started for Free",
+        "trustedBy": "Trusted by Market Leaders",
+        "testimonials": {
+            "t1": {
+                "name": "Sarah Chen",
+                "role": "Marketing Director",
+                "content": "VieAgent completely transformed how we handle SEO. The formatting agent alone saved us 20 hours a week.",
+                "rating": "5"
+            },
+            "t2": {
+                "name": "Michael Ross",
+                "role": "Data Scientist",
+                "content": "The ability to run complex data extraction flows securely without managing infrastructure is a game changer.",
+                "rating": "5"
+            },
+            "t3": {
+                "name": "Jessica Wu",
+                "role": "Founder",
+                "content": "I hired my entire support team here. The response agents are indistinguishable from humans.",
+                "rating": "4"
+            }
+        },
+        "features": {
+            "prebuilt": {
+                "title": "Pre-Built Agents",
+                "desc": "Skip the prompting. Use agents that are already optimized for production use cases."
+            },
+            "vault": {
+                "title": "Secure Vault",
+                "desc": "Your API keys (OpenAI, Gemini) are encrypted with AES-256. We never see them."
+            },
+            "instant": {
+                "title": "Instant Execution",
+                "desc": "Run agents directly from your dashboard with a simple form interface."
+            },
+            "enterprise": {
+                "title": "Enterprise Grade",
+                "desc": "Role-based access control, usage tracking, and team management built-in."
+            }
+        }
+    },
+    "Navigation": {
+        "marketplace": "Marketplace",
+        "dashboard": "Dashboard",
+        "getStarted": "Get Started",
+        "login": "Login"
+    },
+    "Marketplace": {
+        "title": "Store",
+        "subtitle": "Discover AI Agents to automate your workflow.",
+        "noAgents": "No agents found.",
+        "checkBack": "Check back later for new tools."
+    },
+    "Common": {
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "save": "Save Changes",
+        "cancel": "Cancel",
+        "edit": "Edit",
+        "delete": "Delete",
+        "logout": "Logout",
+        "settings": "Settings",
+        "vault": "Credential Vault",
+        "myAccount": "My Account",
+        "support": "Support",
+        "success": "Action successful"
+    },
+    "Dashboard": {
+        "myAgents": "My Agents",
+        "billing": "Billing & Usage",
+        "billingSubtitle": "Manage your subscriptions and purchase history.",
+        "activeSubs": "Active Subscriptions",
+        "orderHistory": "Order History",
+        "noSubs": "No active subscriptions.",
+        "noOrders": "No purchase history."
+    },
+    "Auth": {
+        "loginTitle": "Login",
+        "loginDesc": "Enter your email below to login to your account",
+        "signupTitle": "Create an Account",
+        "signupDesc": "Enter your details below to create an account",
+        "emailLabel": "Email",
+        "passwordLabel": "Password",
+        "forgotPassword": "Forgot your password?",
+        "noAccount": "Don't have an account?",
+        "haveAccount": "Already have an account?",
+        "loginButton": "Login",
+        "signupButton": "Sign Up",
+        "loggingIn": "Logging in...",
+        "signingUp": "Signing up...",
+        "successLogin": "Successfully logged in!",
+        "successSignup": "Account created! Please check your email for confirmation."
+    }
+}
