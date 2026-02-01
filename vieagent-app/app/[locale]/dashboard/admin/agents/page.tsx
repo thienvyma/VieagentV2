@@ -6,10 +6,11 @@ import { Link } from "@/i18n/routing";
 import { Plus, Edit } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
+import { Agent } from "@/types/agent";
+
 export default async function AdminAgentsPage() {
     const supabase = await createClient();
     const { data: agents } = await supabase.from('agents').select('*').order('created_at', { ascending: false });
-    const t = await getTranslations("Dashboard");
     const commonT = await getTranslations("Common");
 
     return (
@@ -38,7 +39,7 @@ export default async function AdminAgentsPage() {
                                 <TableCell colSpan={5} className="text-center py-8">{commonT('loading')}</TableCell>
                             </TableRow>
                         ) : (
-                            agents.map((agent: any) => (
+                            agents.map((agent: Agent) => (
                                 <TableRow key={agent.id}>
                                     <TableCell className="font-medium">{agent.name}</TableCell>
                                     <TableCell>${(agent.price / 100).toFixed(2)}</TableCell>

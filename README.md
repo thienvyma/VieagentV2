@@ -1,13 +1,37 @@
-# VieAgent V2 (Rebuild)
+# VieAgent V2 - AI Agent Marketplace
 
-🚧 **Documentation has moved!**
+> 🚀 Hire AI Employees, Don't Build Them
 
-Please check the **[`docs_v2/`](./docs_v2/README.md)** directory for the official, up-to-date documentation regarding the **Hybrid Architecture (Flowise + ActivePieces)**.
+## 📚 Documentation
 
-## Directory Structure
--   **[`docs_v2/`](./docs_v2/)**: ✅ **Official Documentation** (Read this).
--   **[`legacy_docs/`](./legacy_docs/)**: 🗑 Legacy/Reference docs (Old Custom Engine specs).
--   **[`reference-components/`](./reference-components/)**: 🧩 React components from V1 (for code reference).
+| Document | Purpose |
+|----------|---------|
+| **[`MASTER_PLAN.md`](./MASTER_PLAN.md)** | 🎯 Current status, tasks, roadmap |
+| [`docs_v2/`](./docs_v2/) | Architecture, Database, API specs |
+| [`PHASE_7_DETAILED_PLAN.md`](./PHASE_7_DETAILED_PLAN.md) | Execution Engine details |
+| [`phân tích.md`](./phân%20tích.md) | Business analysis (Vietnamese) |
 
-## Quick Start
-Go to [`docs_v2/README.md`](./docs_v2/README.md) to start.
+## 🗂️ Directory Structure
+
+```
+vieagent-v2/
+├── vieagent-app/          # Main Next.js application
+├── docs_v2/               # Architecture & technical docs
+├── reference-components/  # V1 components (for reference)
+├── legacy_docs/           # Archived docs
+└── docs_archive/          # Old assessment files
+```
+
+## 🚀 Quick Start
+
+```bash
+cd vieagent-app
+npm install
+npm run dev
+```
+
+## 📊 Current Status
+
+**Phase 7 (Execution Engine)**: 80% Complete
+
+See [`MASTER_PLAN.md`](./MASTER_PLAN.md) for detailed progress.

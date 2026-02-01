@@ -3,7 +3,7 @@ import { createClient } from "@/utils/supabase/server"
 import { Button } from "@/components/core/ui/button"
 import { ModeToggle } from "@/components/mode-toggle"
 import { LanguageToggle } from "@/components/language-toggle"
-import { CircleUser, LayoutDashboard } from "lucide-react"
+import { LayoutDashboard } from "lucide-react"
 import { getTranslations } from 'next-intl/server'
 
 export async function SiteHeader() {

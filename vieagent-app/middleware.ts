@@ -7,6 +7,7 @@ const intlMiddleware = createMiddleware(routing);
 
 export default async function middleware(request: NextRequest) {
     // 1. Update session (handles Supabase cookies)
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const response = await updateSession(request);
 
     // 2. Handle internationalization

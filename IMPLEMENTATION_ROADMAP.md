@@ -74,14 +74,25 @@ This document outlines the step-by-step plan to rebuild VieAgent using the **Hyb
 
 ---
 
-## 📅 Phase 6: Landing Page & Marketing
+## 📅 Phase 6: Landing Page & Marketing (✅ DONE)
 **Goal**: Public facing website.
 
 | Task | Component to Reuse/Reference | Action |
 | :--- | :--- | :--- |
-| **1. Landing Home** | N/A (New Code) | Hero section: "Hire AI Employees, Don't Build Them". |
+| **1. Landing Home** | N/A (New Code) | Hero section: "Hire AI Employees, Don't Build Them". (Implemented in `hero.tsx`) |
 | **2. Use Cases** | N/A | Showcase Top Agents (Sales, Data, SEO). |
 | **3. Trust** | `RatingsReviewsSystem.tsx` | Show 5-star reviews on homepage. |
+
+---
+
+## 📅 Phase 4.5: UI/UX Polish (Premium & WOW Factor)
+**Goal**: Elevate the design to "State of the Art" (Glassmorphism, Animations).
+
+| Task | Action |
+| :--- | :--- |
+| **1. Glass Sidebar** | Update `dashboard/layout.tsx` to use floating, frosted glass sidebar. |
+| **2. Dynamic Backgrounds** | Add mesh gradients or subtle animated blobs to `globals.css` / layouts. |
+| **3. Motion** | Ensure `Framer Motion` is used for page transitions and card hover effects. |
 
 ---
 
@@ -108,7 +119,3 @@ Instead of Users "Developing", you will:
 
 ---
 
-## ✅ Ready to start Phase 1?
-1.  Initialize `VieAgent-v2`.
-2.  Setup Supabase & Environment.
-3.  Copy `CredentialManager.tsx` and start refactoring for Multi-Key support.

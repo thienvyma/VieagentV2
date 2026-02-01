@@ -11,7 +11,7 @@
         "ctaTitle": "Sẵn sàng tự động hóa công việc?",
         "ctaSubtitle": "Gia nhập hàng ngàn doanh nghiệp đang sử dụng VieAgent để mở rộng quy mô.",
         "ctaButton": "Bắt đầu miễn phí",
-        "trustedBy": "Được tin dùng bởi các Lãnh đạo",
+        "trustedBy": "Được tin dùng bởi các Doanh Nghiệp",
         "testimonials": {
             "t1": {
                 "name": "Sarah Chen",
@@ -84,7 +84,26 @@
         "activeSubs": "Gói đăng ký đang hoạt động",
         "orderHistory": "Lịch sử đơn hàng",
         "noSubs": "Chưa có gói đăng ký nào.",
-        "noOrders": "Chưa có lịch sử giao dịch."
+        "noOrders": "Chưa có lịch sử giao dịch.",
+        "executionHistory": "Lịch sử chạy Agent",
+        "executionHistorySubtitle": "Xem các lần chạy agent trước đó và kết quả."
+    },
+    "AgentDetail": {
+        "backToMarketplace": "Quay lại Cửa hàng",
+        "features": "Tính năng",
+        "description": "Mô tả",
+        "requirements": "Yêu cầu",
+        "requirementsDesc": "Agent này cần các API key sau trong Vault của bạn:",
+        "loginToBuy": "Đăng nhập để mua",
+        "loginRequired": "Vui lòng đăng nhập để mua hoặc chạy agent",
+        "runAgent": "Chạy Agent",
+        "owned": "Bạn đã sở hữu agent này",
+        "tryFree": "Dùng thử miễn phí",
+        "freeToUse": "Không cần thanh toán",
+        "buyNow": "Mua ngay",
+        "oneTimePurchase": "Mua một lần, sở hữu vĩnh viễn",
+        "securePayment": "Thanh toán bảo mật qua Stripe",
+        "instantAccess": "Truy cập ngay sau khi mua"
     },
     "Auth": {
         "loginTitle": "Đăng nhập",
@@ -102,5 +121,35 @@
         "signingUp": "Đang đăng ký...",
         "successLogin": "Đăng nhập thành công!",
         "successSignup": "Đã tạo tài khoản! Vui lòng kiểm tra email để xác nhận."
+    },
+    "Settings": {
+        "title": "Cài đặt",
+        "subtitle": "Quản lý cài đặt tài khoản và tùy chọn.",
+        "profile": "Hồ sơ",
+        "profileDesc": "Thông tin cá nhân của bạn.",
+        "name": "Họ tên",
+        "namePlaceholder": "Nhập tên của bạn",
+        "email": "Địa chỉ Email",
+        "saveChanges": "Lưu thay đổi",
+        "account": "Tài khoản",
+        "accountDesc": "Chi tiết tài khoản và cài đặt bảo mật.",
+        "role": "Vai trò tài khoản",
+        "roleDesc": "Cấp độ truy cập hiện tại.",
+        "memberSince": "Thành viên từ",
+        "preferences": "Tùy chọn",
+        "preferencesDesc": "Tùy chỉnh trải nghiệm của bạn.",
+        "language": "Ngôn ngữ",
+        "languageDesc": "Chọn ngôn ngữ ưa thích.",
+        "theme": "Giao diện",
+        "themeDesc": "Chọn sáng, tối, hoặc mặc định theo hệ thống.",
+        "systemDefault": "Mặc định hệ thống",
+        "notifications": "Thông báo",
+        "notificationsDesc": "Quản lý thông báo email và push.",
+        "emailNotifications": "Thông báo Email",
+        "emailNotificationsDesc": "Nhận cập nhật qua email.",
+        "enabled": "Đã bật",
+        "dangerZone": "Vùng nguy hiểm",
+        "dangerZoneDesc": "Các hành động không thể hoàn tác. Hãy cẩn thận.",
+        "deleteAccount": "Xóa tài khoản"
     }
 }

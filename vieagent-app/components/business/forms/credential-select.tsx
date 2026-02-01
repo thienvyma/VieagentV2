@@ -8,17 +8,16 @@ import {
     SelectValue,
 } from "@/components/core/ui/select";
 import { FormControl, FormItem, FormLabel, FormMessage } from "@/components/core/ui/form";
+import { Credential } from "@/types/execution";
 import { ControllerRenderProps } from "react-hook-form";
 
-interface CredentialOption {
-    id: string;
-    key_name: string;
-    provider: string;
-}
+// Re-export Credential as CredentialOption for form consumers
+export type CredentialOption = Credential;
 
 interface CredentialSelectProps {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     field: ControllerRenderProps<any, any>;
-    credentials: CredentialOption[];
+    credentials: Credential[];
     label: string;
     description?: string;
     providerFilter?: string; // e.g. "openai" to only show OpenAI keys

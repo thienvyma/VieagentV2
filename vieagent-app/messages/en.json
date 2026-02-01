@@ -84,7 +84,26 @@
         "activeSubs": "Active Subscriptions",
         "orderHistory": "Order History",
         "noSubs": "No active subscriptions.",
-        "noOrders": "No purchase history."
+        "noOrders": "No purchase history.",
+        "executionHistory": "Execution History",
+        "executionHistorySubtitle": "View your past agent runs and their results."
+    },
+    "AgentDetail": {
+        "backToMarketplace": "Back to Marketplace",
+        "features": "Features",
+        "description": "Description",
+        "requirements": "Requirements",
+        "requirementsDesc": "This agent requires the following API keys in your Vault:",
+        "loginToBuy": "Login to Purchase",
+        "loginRequired": "Please login to buy or run agents",
+        "runAgent": "Run Agent",
+        "owned": "You own this agent",
+        "tryFree": "Try for Free",
+        "freeToUse": "No payment required",
+        "buyNow": "Buy Now",
+        "oneTimePurchase": "One-time purchase, lifetime access",
+        "securePayment": "Secure payment via Stripe",
+        "instantAccess": "Instant access after purchase"
     },
     "Auth": {
         "loginTitle": "Login",
@@ -102,5 +121,35 @@
         "signingUp": "Signing up...",
         "successLogin": "Successfully logged in!",
         "successSignup": "Account created! Please check your email for confirmation."
+    },
+    "Settings": {
+        "title": "Settings",
+        "subtitle": "Manage your account settings and preferences.",
+        "profile": "Profile",
+        "profileDesc": "Your personal information.",
+        "name": "Full Name",
+        "namePlaceholder": "Enter your name",
+        "email": "Email Address",
+        "saveChanges": "Save Changes",
+        "account": "Account",
+        "accountDesc": "Account details and security settings.",
+        "role": "Account Role",
+        "roleDesc": "Your current access level.",
+        "memberSince": "Member Since",
+        "preferences": "Preferences",
+        "preferencesDesc": "Customize your experience.",
+        "language": "Language",
+        "languageDesc": "Select your preferred language.",
+        "theme": "Theme",
+        "themeDesc": "Choose light, dark, or system default.",
+        "systemDefault": "System Default",
+        "notifications": "Notifications",
+        "notificationsDesc": "Manage email and push notifications.",
+        "emailNotifications": "Email Notifications",
+        "emailNotificationsDesc": "Receive updates via email.",
+        "enabled": "Enabled",
+        "dangerZone": "Danger Zone",
+        "dangerZoneDesc": "Irreversible actions. Please be careful.",
+        "deleteAccount": "Delete Account"
     }
 }

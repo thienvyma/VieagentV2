@@ -2,7 +2,7 @@ import { Link } from "@/i18n/routing";
 import { Button } from "@/components/core/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { getTranslations } from 'next-intl/server';
-import { FadeIn, FadeInStagger, FadeInItem } from "./motion-elements";
+import { FadeIn } from "./motion-elements";
 
 export async function Hero() {
     const t = await getTranslations('Landing');
@@ -11,14 +11,14 @@ export async function Hero() {
         <section className="relative pt-24 pb-32 overflow-hidden bg-background">
             <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
                 <FadeIn delay={0}>
-                    <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary/10 text-primary hover:bg-primary/20 mb-8 backdrop-blur-sm">
+                    <div className="inline-flex items-center rounded-full border px-3 py-1 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-primary/20 bg-card text-primary shadow-sm hover:bg-accent mb-8 backdrop-blur-sm">
                         <Sparkles className="w-3 h-3 mr-2" />
                         <span>{t('heroBadge')}</span>
                     </div>
                 </FadeIn>
 
                 <FadeIn delay={0.1}>
-                    <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70 dark:from-white dark:to-white/70">
+                    <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight mb-8 text-foreground drop-shadow-sm">
                         {String(t('heroTitleLine1') || '')}
                         <br />
                         {String(t('heroTitleLine2') || '')}

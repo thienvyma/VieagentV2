@@ -1,5 +1,5 @@
 import { createClient } from "@/utils/supabase/server";
-import { Button } from "@/components/core/ui/button";
+
 import {
     Card,
     CardContent,
@@ -24,6 +24,14 @@ export default async function CredentialsPage() {
         .from("credentials")
         .select("*")
         .order("created_at", { ascending: false });
+
+
+    interface Credential {
+        id: string;
+        provider: string;
+        key_name: string;
+        created_at: string;
+    }
 
     return (
         <div className="grid gap-6">
@@ -66,7 +74,7 @@ export default async function CredentialsPage() {
                                         <TableCell colSpan={3} className="text-center text-muted-foreground">No credentials found.</TableCell>
                                     </TableRow>
                                 )}
-                                {credentials?.map((cred) => (
+                                {credentials?.map((cred: Credential) => (
                                     <TableRow key={cred.id}>
                                         <TableCell className="font-medium capitalize">{cred.provider}</TableCell>
                                         <TableCell>{cred.key_name}</TableCell>

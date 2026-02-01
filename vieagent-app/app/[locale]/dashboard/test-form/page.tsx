@@ -1,13 +1,17 @@
 import { createClient } from "@/utils/supabase/server";
 import { DynamicForm } from "@/components/business/forms/dynamic-form";
+import { CredentialOption } from "@/components/business/forms/credential-select";
 import { AgentInputSchema } from "@/types/engine";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/core/ui/card";
 
 export default async function TestFormPage() {
     const supabase = await createClient();
-    const { data: credentials } = await supabase
+    const { data: credentialsRaw } = await supabase
         .from("credentials")
         .select("id, key_name, provider");
+
+    // Cast to proper type
+    const credentials = (credentialsRaw || []) as unknown as CredentialOption[];
 
     // Sample Schema for "News Summarizer"
     const testSchema: AgentInputSchema = {
@@ -49,11 +53,10 @@ export default async function TestFormPage() {
         ],
     };
 
-    async function mockSubmit(data: any) {
+    async function mockSubmit(data: Record<string, unknown>): Promise<void> {
         "use server";
         console.log("SERVER ACTION RECEIVED FORM DATA:", data);
         // In real life, we would call Flowise API here
-        return { success: true };
     }
 
     return (

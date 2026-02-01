@@ -27,8 +27,36 @@ export interface AgentInputSchema {
     fields: FormInputField[];
 }
 
+/**
+ * Flowise Specific Types
+ */
+export interface FlowisePredictionPayload {
+    question: string;
+    overrideConfig?: Record<string, unknown>;
+    sessionId?: string; // For session isolation (Multi-tenancy)
+    history?: Array<{
+        type: string;
+        message: string;
+    }>;
+    streaming?: boolean;
+    socketIOClientId?: string;
+}
+
+export interface FlowisePredictionResponse {
+    text: string;
+    question?: string;
+    chatId?: string;
+    chatMessageId?: string;
+    sessionId?: string;
+    memoryType?: string;
+    [key: string]: unknown;
+}
+
+/**
+ * Shared Execution Types
+ */
 export interface WorkflowExecutionPayload {
     agentId?: string;
     workflowId?: string;
-    inputs: Record<string, any>;
+    inputs: Record<string, unknown>;
 }

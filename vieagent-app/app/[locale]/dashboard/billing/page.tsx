@@ -24,6 +24,26 @@ export default async function BillingPage() {
         .eq("user_id", user.id)
         .order("created_at", { ascending: false });
 
+    interface Subscription {
+        id: string;
+        current_period_end: string;
+        status: string;
+        agents: {
+            name: string;
+            price: number;
+        } | { name: string; price: number }[];
+    }
+
+    interface Purchase {
+        id: string;
+        created_at: string;
+        amount: number;
+        receipt_url: string;
+        agents: {
+            name: string;
+        } | { name: string }[];
+    }
+
     return (
         <div className="space-y-8">
             <div>
@@ -46,7 +66,7 @@ export default async function BillingPage() {
                         <p className="text-sm text-muted-foreground">No active subscriptions.</p>
                     ) : (
                         <div className="space-y-4">
-                            {subscriptions.map((sub: any) => (
+                            {subscriptions.map((sub: Subscription) => (
                                 <div key={sub.id} className="flex items-center justify-between border-b pb-4 last:border-0 last:pb-0">
                                     <div>
                                         <p className="font-medium">
@@ -84,7 +104,7 @@ export default async function BillingPage() {
                         <p className="text-sm text-muted-foreground">No purchase history.</p>
                     ) : (
                         <div className="space-y-4">
-                            {purchases.map((purchase: any) => (
+                            {purchases.map((purchase: Purchase) => (
                                 <div key={purchase.id} className="flex items-center justify-between border-b pb-4 last:border-0 last:pb-0">
                                     <div>
                                         <p className="font-medium">

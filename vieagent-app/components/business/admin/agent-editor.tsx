@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -44,29 +44,55 @@ const agentFormSchema = z.object({
 
 type AgentFormValues = z.infer<typeof agentFormSchema>;
 
-const defaultValues: Partial<AgentFormValues> = {
-    price: 0,
-    engine: "flowise",
-    status: "draft",
-    input_schema: "[]",
-};
 
-export function AgentEditor({ initialData }: { initialData?: any }) {
+
+import { Agent } from "@/types/agent";
+
+export function AgentEditor({ initialData }: { initialData?: Agent }) {
     const router = useRouter();
+
+    const formattedDefaultValues: AgentFormValues = initialData ? {
+        name: initialData.name,
+        description: initialData.description,
+        category: initialData.category,
+        price: initialData.price,
+        status: (initialData.status === "pending" ? "draft" : initialData.status) as "draft" | "published",
+        cover_image: initialData.cover_image || "",
+        engine: (initialData.engine_type || "flowise") as "flowise" | "activepieces",
+        engine_id: initialData.engine_flow_id || "",
+        input_schema: initialData.input_schema ? JSON.stringify(initialData.input_schema, null, 2) : "{}",
+    } : {
+        name: "",
+        description: "",
+        category: "",
+        price: 0,
+        status: "draft",
+        cover_image: "",
+        engine: "flowise",
+        engine_id: "",
+        input_schema: "[]",
+    };
+
     const form = useForm<AgentFormValues>({
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         resolver: zodResolver(agentFormSchema) as any,
-        defaultValues: initialData ? {
-            ...initialData,
-            input_schema: JSON.stringify(initialData.input_schema, null, 2)
-        } : defaultValues,
+        defaultValues: formattedDefaultValues,
     });
 
     async function onSubmit(data: AgentFormValues) {
         const supabase = createClient();
 
+        // Map form values back to DB columns
         const payload = {
-            ...data,
-            input_schema: JSON.parse(data.input_schema),
+            name: data.name,
+            description: data.description,
+            category: data.category,
+            price: data.price,
+            status: data.status,
+            cover_image: data.cover_image,
+            engine_type: data.engine,         // Map engine -> engine_type
+            engine_flow_id: data.engine_id,   // Map engine_id -> engine_flow_id
+            input_schema: JSON.parse(data.input_schema) as Record<string, unknown>,
             updated_at: new Date().toISOString(),
         };
 

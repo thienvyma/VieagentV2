@@ -22,7 +22,7 @@ export default async function LandingPage() {
                         <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
                             {t('ctaSubtitle') || ''}
                         </p>
-                        <Button size="lg" className="h-12 px-10 text-lg" asChild>
+                        <Button size="lg" variant="default" className="h-14 px-12 text-xl bg-primary text-primary-foreground hover:bg-primary/90 shadow-xl rounded-full transition-transform hover:scale-105" asChild>
                             <Link href="/signup">{t('ctaButton') || 'Get Started'}</Link>
                         </Button>
                     </div>

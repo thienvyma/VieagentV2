@@ -21,7 +21,10 @@ export function MyAgentCard({ agent }: MyAgentCardProps) {
             <div className="h-32 w-full bg-muted/30 rounded-t-xl flex items-center justify-center text-muted-foreground relative group">
                 {/* Simple visualization or cover */}
                 {agent.cover_image ? (
-                    <img src={agent.cover_image} alt={agent.name} className="h-full w-full object-cover rounded-t-xl opacity-80 group-hover:opacity-100 transition-opacity" />
+                    <>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src={agent.cover_image} alt={agent.name} className="h-full w-full object-cover rounded-t-xl opacity-80 group-hover:opacity-100 transition-opacity" />
+                    </>
                 ) : (
                     <span className="text-3xl">🤖</span>
                 )}

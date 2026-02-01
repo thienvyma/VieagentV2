@@ -4,6 +4,7 @@ import "../globals.css"; // Relative path from [locale]/layout.tsx -> app/global
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/core/ui/sonner"
 import { SiteHeader } from "@/components/site-header"
+import { HeaderWrapper } from "@/components/header-wrapper"
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -52,7 +53,9 @@ export default async function LocaleLayout({
                         enableSystem
                         disableTransitionOnChange
                     >
-                        <SiteHeader />
+                        <HeaderWrapper>
+                            <SiteHeader />
+                        </HeaderWrapper>
                         <div className="flex-1">
                             {children}
                         </div>

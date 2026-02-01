@@ -28,18 +28,18 @@ import { Textarea } from "@/components/core/ui/textarea";
 import { Switch } from "@/components/core/ui/switch";
 
 
-import { CredentialSelect } from "./credential-select";
+import { CredentialSelect, CredentialOption } from "./credential-select";
 import type { AgentInputSchema, FormInputField } from "@/types/engine";
 
 interface DynamicFormProps {
     schema: AgentInputSchema;
-    credentials?: any[]; // Passed from server
-    onSubmit: (data: any) => Promise<any>;
+    credentials?: CredentialOption[]; // Passed from server
+    onSubmit: (data: Record<string, unknown>) => Promise<void>;
 }
 
 // Helper to generate Zod schema from JSON schema
 function generateZodSchema(fields: FormInputField[]) {
-    const shape: Record<string, any> = {};
+    const shape: Record<string, z.ZodTypeAny> = {};
 
     fields.forEach((field) => {
         let validator;
@@ -87,7 +87,7 @@ export function DynamicForm({ schema, credentials = [], onSubmit }: DynamicFormP
 
     // Initial values
     const defaultValues = useMemo(() => {
-        const defaults: Record<string, any> = {};
+        const defaults: Record<string, unknown> = {};
         schema.fields.forEach(f => {
             if (f.defaultValue !== undefined) defaults[f.name] = f.defaultValue;
         });
@@ -99,7 +99,7 @@ export function DynamicForm({ schema, credentials = [], onSubmit }: DynamicFormP
         defaultValues,
     });
 
-    async function handleSubmit(data: any) {
+    async function handleSubmit(data: Record<string, unknown>) {
         setIsLoading(true);
         try {
             await onSubmit(data);
